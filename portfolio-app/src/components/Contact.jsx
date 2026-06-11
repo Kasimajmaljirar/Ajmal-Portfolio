@@ -47,7 +47,7 @@ const Contact = () => {
           </div>
 
           <div className="col-12">
-            <form style={{ padding: '30px', background: '#fff', boxShadow: '0 0 24px 0 rgba(0, 0, 0, 0.1)', borderRadius: '8px', height: '100%' }} onSubmit={(e) => { e.preventDefault(); alert("Form submitted! (Visual Demonstration)"); }}>
+            <form style={{ padding: '30px', background: '#fff', boxShadow: '0 0 24px 0 rgba(0, 0, 0, 0.1)', borderRadius: '8px', height: '100%' }} onSubmit={(e) => { e.preventDefault(); alert("Form submitted! (Visual Demonstration)"); e.target.reset(); }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <div style={{ display: 'flex', gap: '20px' }}>
                   <div style={{ flex: 1 }}>
