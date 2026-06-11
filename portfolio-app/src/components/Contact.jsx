@@ -1,6 +1,38 @@
 import React from 'react';
 
 const Contact = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/kasimajmaljirar17@gmail.com", {
+        method: "POST",
+        headers: { 
+            'Accept': 'application/json'
+        },
+        body: formData
+      });
+      
+      if (response.ok) {
+        alert("Thank you! Your message has been sent successfully.");
+        form.reset();
+      } else {
+        alert("Oops! Something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      alert("Oops! There was a problem sending your message.");
+    } finally {
+      btn.textContent = originalText;
+      btn.disabled = false;
+    }
+  };
   return (
     <section id="contact" className="contact section fade-in">
       <div className="container section-title">
@@ -47,28 +79,28 @@ const Contact = () => {
           </div>
 
           <div className="col-12">
-            <form style={{ padding: '30px', background: '#fff', boxShadow: '0 0 24px 0 rgba(0, 0, 0, 0.1)', borderRadius: '8px', height: '100%' }} onSubmit={(e) => { e.preventDefault(); alert("Form submitted! (Visual Demonstration)"); e.target.reset(); }}>
+            <form style={{ padding: '30px', background: '#fff', boxShadow: '0 0 24px 0 rgba(0, 0, 0, 0.1)', borderRadius: '8px', height: '100%' }} onSubmit={handleSubmit}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <div style={{ display: 'flex', gap: '20px' }}>
                   <div style={{ flex: 1 }}>
                     <label htmlFor="name-field" style={{ paddingBottom: '8px', display: 'block', color: 'var(--text-muted)' }}>Your Name</label>
-                    <input type="text" id="name-field" style={{ width: '100%', padding: '12px 15px', borderRadius: '4px', border: '1px solid #ced4da', fontSize: '14px' }} required placeholder="Enter your full name" />
+                    <input type="text" name="name" id="name-field" style={{ width: '100%', padding: '12px 15px', borderRadius: '4px', border: '1px solid #ced4da', fontSize: '14px' }} required placeholder="Enter your full name" />
                   </div>
 
                   <div style={{ flex: 1 }}>
                     <label htmlFor="email-field" style={{ paddingBottom: '8px', display: 'block', color: 'var(--text-muted)' }}>Your Email</label>
-                    <input type="email" id="email-field" style={{ width: '100%', padding: '12px 15px', borderRadius: '4px', border: '1px solid #ced4da', fontSize: '14px' }} required placeholder="Enter your email" />
+                    <input type="email" name="email" id="email-field" style={{ width: '100%', padding: '12px 15px', borderRadius: '4px', border: '1px solid #ced4da', fontSize: '14px' }} required placeholder="Enter your email" />
                   </div>
                 </div>
 
                 <div>
                   <label htmlFor="subject-field" style={{ paddingBottom: '8px', display: 'block', color: 'var(--text-muted)' }}>Subject</label>
-                  <input type="text" id="subject-field" style={{ width: '100%', padding: '12px 15px', borderRadius: '4px', border: '1px solid #ced4da', fontSize: '14px' }} required placeholder="Enter the subject" />
+                  <input type="text" name="_subject" id="subject-field" style={{ width: '100%', padding: '12px 15px', borderRadius: '4px', border: '1px solid #ced4da', fontSize: '14px' }} required placeholder="Enter the subject" />
                 </div>
 
                 <div>
                   <label htmlFor="message-field" style={{ paddingBottom: '8px', display: 'block', color: 'var(--text-muted)' }}>Message</label>
-                  <textarea id="message-field" rows="5" style={{ width: '100%', padding: '12px 15px', borderRadius: '4px', border: '1px solid #ced4da', fontSize: '14px', resize: 'vertical' }} required placeholder="Enter the message"></textarea>
+                  <textarea name="message" id="message-field" rows="5" style={{ width: '100%', padding: '12px 15px', borderRadius: '4px', border: '1px solid #ced4da', fontSize: '14px', resize: 'vertical' }} required placeholder="Enter the message"></textarea>
                 </div>
 
                 <div className="text-center mt-3">
