@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
+import Internship from './components/Internship';
 import Projects from './components/Projects';
 import Education from './components/Education';
 import Contact from './components/Contact';
@@ -83,6 +84,7 @@ function App() {
             <li><a href="#hero" onClick={toggleMobileNav}>Home</a></li>
             <li><a href="#about" onClick={toggleMobileNav}>About</a></li>
             <li><a href="#skills" onClick={toggleMobileNav}>Skills</a></li>
+            <li><a href="#internship" onClick={toggleMobileNav}>Internship</a></li>
             <li><a href="#projects" onClick={toggleMobileNav}>Project Experience</a></li>
             <li><a href="#education" onClick={toggleMobileNav}>Education</a></li>
             <li><a href="#certifications" onClick={toggleMobileNav}>Certifications</a></li>
@@ -100,6 +102,7 @@ function App() {
         <Hero />
         <About />
         <Skills />
+        <Internship />
         <Projects />
         <Education />
         <Contact />
