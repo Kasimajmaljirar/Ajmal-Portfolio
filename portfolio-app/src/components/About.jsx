@@ -19,7 +19,7 @@ const About = () => {
       <section id="about" className="about section fade-in">
         <div className="container section-title">
           <h2>About</h2>
-          <p>Entry-Level Data Analyst & Python Developer with hands-on experience in SQL, Python, Excel, and Power BI. Skilled in data cleaning, data validation, dashboard development, and business reporting.</p>
+          <p>Entry-Level Data Analyst & Python Developer with hands-on experience in MySQL, Python, Excel, and Power BI. Skilled in data cleaning, data validation, dashboard development, and business reporting.</p>
         </div>
 
         <div className="container">
