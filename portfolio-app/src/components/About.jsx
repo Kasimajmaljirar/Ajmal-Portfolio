@@ -25,13 +25,13 @@ const About = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-4" style={{ marginBottom: '20px' }}>
-              <img 
-                src="/profile_about.jpg" 
-                className="img-fluid" 
-                alt="Profile" 
+              <img
+                src="/profile_about.jpg"
+                className="img-fluid"
+                alt="Profile"
                 onClick={toggleLightbox}
-                style={{ width: '100%', maxWidth: '300px', borderRadius: '8px', display: 'block', margin: '0 auto', cursor: 'pointer', transition: 'transform 0.3s' }} 
-                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'} 
+                style={{ width: '100%', maxWidth: '300px', borderRadius: '8px', display: 'block', margin: '0 auto', cursor: 'pointer', transition: 'transform 0.3s' }}
+                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
                 onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
               />
             </div>
