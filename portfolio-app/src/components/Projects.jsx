@@ -24,10 +24,10 @@ const Projects = () => {
                   <li style={{ marginBottom: '8px' }}>Delivered actionable insights for inventory planning and marketing optimization through KPI-driven reporting.</li>
                 </ul>
                 <div className="tech-stack">
-                   <span className="badge">Python</span>
+                  <span className="badge">Python</span>
                   <span className="badge">SQL</span>
                   <span className="badge">Power BI</span>
-                   <span className="badge">MS Excel</span>
+                  <span className="badge">MS Excel</span>
                   <span className="badge">Data Cleaning</span>
                   <span className="badge">Time-Series Analysis</span>
                 </div>
@@ -47,15 +47,15 @@ const Projects = () => {
                 <h4>Travel, Tourism & Hospitality – Customer Retention</h4>
                 <ul className="description" style={{ textAlign: 'justify', listStyleType: 'disc', paddingLeft: '20px' }}>
                   <li style={{ marginBottom: '8px' }}>Analyzed historical hotel booking data to identify factors influencing customer cancellations and revenue performance.</li>
-                  <li style={{ marginBottom: '8px' }}>Performed Exploratory Data Analysis (EDA) using Pandas, NumPy, Matplotlib, and Seaborn to uncover 
-                                                      booking behavior patterns and seasonal demand trends.</li>
-                  <li style={{ marginBottom: '8px' }}>Built customer segmentation models to classify travelers based on booking characteristics and  
-    cancellation risk.</li>
-                  <li style={{ marginBottom: '8px' }}>Conducted statistical analysis on Average Daily Rate (ADR), lead time, deposit type, and customer     
-    segments to identify churn drivers</li>
+                  <li style={{ marginBottom: '8px' }}>Performed Exploratory Data Analysis (EDA) using Pandas, NumPy, Matplotlib, and Seaborn to uncover
+                    booking behavior patterns and seasonal demand trends.</li>
+                  <li style={{ marginBottom: '8px' }}>Built customer segmentation models to classify travelers based on booking characteristics and
+                    cancellation risk.</li>
+                  <li style={{ marginBottom: '8px' }}>Conducted statistical analysis on Average Daily Rate (ADR), lead time, deposit type, and customer
+                    segments to identify churn drivers</li>
                   <li style={{ marginBottom: '8px' }}>Developed predictive models using Logistic Regression to estimate booking cancellation probability</li>
-                  <li style={{ marginBottom: '8px' }}>Created interactive dashboards visualizing seasonal pricing trends, booking volume, and cancellation 
-    metrics to support revenue optimization decisions.</li>
+                  <li style={{ marginBottom: '8px' }}>Created interactive dashboards visualizing seasonal pricing trends, booking volume, and cancellation
+                    metrics to support revenue optimization decisions.</li>
                 </ul>
                 <div className="tech-stack">
                   <span className="badge">Python</span>
@@ -79,29 +79,39 @@ const Projects = () => {
           <div className="col-12">
             <div className="portfolio-item h-100">
               <div className="portfolio-content">
-                <h4>Nexus Market</h4>
+                <h4>AI-First CRM HCP Module – Log Interaction Screen</h4>
                 <ul className="description" style={{ textAlign: 'justify', listStyleType: 'disc', paddingLeft: '20px' }}>
-                  <li style={{ marginBottom: '8px' }}>Nexus Market is a modern, high-performance e-commerce web application designed to deliver a premium, seamless shopping experience. The platform combines a sleek, dynamic user interface with a robust, scalable backend architecture, allowing for efficient product management and secure transactions.</li>
-                  <li style={{ marginBottom: '8px' }}>Built a highly responsive, modern UI utilizing a glassmorphism design system, smooth animations, and engaging gradient aesthetics to maximize user engagement and retention.</li>
-                  <li style={{ marginBottom: '8px' }}>Developed a RESTful API backend to serve frontend requests, handle business logic, and manage secure data transactions seamlessly.</li>
-                  <li style={{ marginBottom: '8px' }}>Implemented efficient state handling on the client side for seamless cart interactions, dynamic product grids, and instant user feedback without page reloads.</li>
-                  {/* <li style={{ marginBottom: '8px' }}></li>
+                  <li style={{ marginBottom: '8px' }}>Developed an AI-powered Customer Relationship Management (CRM) module for Healthcare Professionals (HCPs) that enables pharmaceutical field representatives to efficiently record and manage doctor interactions</li>
+                  <li style={{ marginBottom: '8px' }}>The system provides two interaction logging methods: a structured form and a conversational AI chat interface.</li>
+                  <li style={{ marginBottom: '8px' }}>The AI chat automatically extracts key details such as doctor name, hospital, products discussed, meeting summary, follow-up date, and action items, reducing manual data entry and improving documentation accuracy.</li>
+                  <li style={{ marginBottom: '8px' }}>Built the frontend using React and Redux Toolkit for responsive UI and centralized state management, and developed the backend with FastAPI and SQLAlchemy for secure API and database operations.</li>
+                  <li style={{ marginBottom: '8px' }}>Integrated LangGraph with the Groq Gemma2-9B-IT language model to create an AI agent capable of selecting appropriate workflow tools based on user intent.</li>
+                  <li style={{ marginBottom: '8px' }}>Implemented AI-driven tools including interaction logging, interaction editing, HCP interaction search, meeting summarization, and follow-up recommendation generation.</li>
+                  <li style={{ marginBottom: '8px' }}>The application stores structured interaction records in PostgreSQL/MySQL and demonstrates AI agent orchestration, LLM-based entity extraction, and workflow automation for healthcare CRM use cases.</li>
+                  {/* <li style={{ marginBottom: '8px' }}></li>and action items, reducing manual data entry and improving documentation accuracy. </li>
+                  <li style={{ marginBottom: '8px' }}>The structured form
                   <li style={{ marginBottom: '8px' }}></li>
                   <li style={{ marginBottom: '8px' }}></li> */}
-                  
+
                 </ul>
                 <div className="tech-stack">
-                  
+
+
+                  <span className="badge">React</span>
+                  <span className="badge">Redux Toolkit</span>
+                  <span className="badge">FastAPI</span>
                   <span className="badge">Python</span>
-                  <span className="badge">React (Vite)</span>
-                  <span className="badge">JavaScript</span>
-                  <span className="badge"> Flask RESTful API</span>
+                  <span className="badge">SQLAlchemy</span>
+                  <span className="badge">LangGraph</span>
+                  <span className="badge">Groq Gemma2-9B-IT</span>
+                  <span className="badge">PostgreSQL</span>
                   <span className="badge">MySQL</span>
+                  <span className="badge">Tailwind CSS</span>
                 </div>
                 <div style={{ marginTop: '15px' }}>
-                  <a href="https://github.com/Kasimajmaljirar/Nexus-Market-" target="_blank" rel="noreferrer" style={{ color: '#173b6c', display: 'inline-flex', alignItems: 'center', fontSize: '14px', fontWeight: 500, textDecoration: 'none' }}>
+                  <a href="https://ai-crm-hcp-beta.vercel.app/" target="_blank" rel="noreferrer" style={{ color: '#173b6c', display: 'inline-flex', alignItems: 'center', fontSize: '14px', fontWeight: 500, textDecoration: 'none' }}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '8px' }}><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                    View on GitHub
+                    View on
                   </a>
                 </div>
               </div>
